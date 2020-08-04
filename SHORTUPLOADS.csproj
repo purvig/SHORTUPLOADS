@@ -72,17 +72,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BASE\Hooks.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="PAGE\Class1.cs" />
+    <Compile Include="PAGE\Pageload - TP\Pageload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="STEP\Class1.cs" />
-    <Compile Include="TEST\Class1.cs" />
+    <Compile Include="STEP\PageLoadSteps.cs" />
+    <Compile Include="TEST\Pageload - TP\PageLoad.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PageLoad.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="TEST\Pageload - TP\PageLoad.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PageLoad.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="STEP\Pageload - TP\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

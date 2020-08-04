@@ -7,13 +7,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace SHORTUPLOADS.BASE
-{
-  
+{ 
     public  class Hooks
-    {
-  
-
-        
+    {       
             public IWebDriver Driver;
             [BeforeScenario]
             public void BeforeScenario()
