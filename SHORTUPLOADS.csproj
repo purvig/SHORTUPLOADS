@@ -72,9 +72,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BASE\Hooks.cs" />
+    <Compile Include="PAGE\Login -TP\Login.cs" />
     <Compile Include="PAGE\Pageload - TP\Pageload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="STEP\PageLoadSteps.cs" />
+    <Compile Include="STEP\Login - TP\LoginSteps.cs" />
+    <Compile Include="STEP\Pageload - TP\PageLoadSteps.cs" />
+    <Compile Include="TEST\Login - TP\Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.feature</DependentUpon>
+    </Compile>
     <Compile Include="TEST\Pageload - TP\PageLoad.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,14 +91,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="TEST\Login - TP\Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
     <None Include="TEST\Pageload - TP\PageLoad.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PageLoad.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="STEP\Pageload - TP\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
