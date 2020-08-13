@@ -72,11 +72,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BASE\Hooks.cs" />
+    <Compile Include="PAGE\Footers - TP\Footers.cs" />
     <Compile Include="PAGE\Login -TP\Login.cs" />
     <Compile Include="PAGE\Pageload - TP\Pageload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STEP\Footers - TP\FootersSteps.cs" />
     <Compile Include="STEP\Login - TP\LoginSteps.cs" />
     <Compile Include="STEP\Pageload - TP\PageLoadSteps.cs" />
+    <Compile Include="TEST\Footers - TP\footers.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>footers.feature</DependentUpon>
+    </Compile>
     <Compile Include="TEST\Login - TP\Login.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,6 +98,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="TEST\Footers - TP\footers.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>footers.feature.cs</LastGenOutput>
+    </None>
     <None Include="TEST\Login - TP\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
