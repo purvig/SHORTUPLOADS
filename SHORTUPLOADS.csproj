@@ -94,6 +94,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PageLoad.feature</DependentUpon>
     </Compile>
+    <Compile Include="TEST\Searchbar-PG\Search.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,6 +114,10 @@
     <None Include="TEST\Pageload - TP\PageLoad.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PageLoad.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TEST\Searchbar-PG\Search.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Search.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup />
